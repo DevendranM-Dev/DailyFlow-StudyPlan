@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyFlow - Study Planner</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h2>DailyFlow</h2>
+        <p>My Personal Study Planner</p>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h1>Good Evening!</h1>
+            <p>Plan your day. Achieve your goals.</p>
+        </section>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p id="pendingTasks">0</p>
+            </div>
+
+        </section>
+
+        <section class="task-section">
+
+            <h2>Add New Task</h2>
+
+            <form id="taskForm">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task"
+                    maxlength="100"
+                    required
+                >
+
+                <select id="priority">
+                    <option value="High">High Priority</option>
+                    <option value="Medium" selected>Medium Priority</option>
+                    <option value="Low">Low Priority</option>
+                </select>
+
+                <button type="submit">Add Task</button>
+
+            </form>
+
+        </section>
+
+        <section class="task-section">
+
+            <h2>My Tasks</h2>
+
+            <ul id="taskList"></ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>DailyFlow © 2026 | Stay Consistent</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
